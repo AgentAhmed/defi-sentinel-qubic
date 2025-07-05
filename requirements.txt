@@ -1,0 +1,8 @@
+streamlit
+openai
+tiktoken
+pygments
+jinja2
+pdfkit
+reportlab
+
