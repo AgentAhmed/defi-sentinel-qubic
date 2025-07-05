@@ -5,4 +5,5 @@ pygments
 jinja2
 pdfkit
 reportlab
+fpdf2
 
