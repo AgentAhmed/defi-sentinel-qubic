@@ -164,6 +164,7 @@ if st.session_state.get("audit_results"):
                     mime="application/pdf"
                 )
 
+
         if results.get("json_path") and os.path.exists(results["json_path"]):
             with open(results["json_path"], "rb") as f:
                 json_bytes = f.read()
@@ -173,6 +174,7 @@ if st.session_state.get("audit_results"):
                     file_name=os.path.basename(results["json_path"]),
                     mime="application/json"
                 )
+
 
 
         st.subheader("⚠️ Detected Vulnerabilities")
