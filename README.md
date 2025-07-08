@@ -6,6 +6,15 @@
 ## 🎯 Purpose
 To demonstrate a real-world application of decentralized computation using Qubic's smart contract architecture, while showcasing how AI and agentic tools can empower developers with secure-by-design workflows.
 
+🔹 Short Description (≤255 characters):
+AI-powered C++ smart contract auditor for the Qubic Network. Uses modular agents and Groq’s LLaMA to detect vulnerabilities, assess risk, and generate audit reports in PDF/JSON.
+
+🔹 Long Description (≥100 words):
+DeFi Sentinel is an autonomous auditing platform designed to ensure the security of smart contracts on the Qubic Network. It uses a multi-agent architecture built with the Model Context Protocol (MCP) to analyze C++ code, detect vulnerabilities, score risks, and generate readable reports. Enhanced by Groq's LLaMA3 model, the system explains potential exploits, recommends fixes, and supports both single and batch scanning. A Streamlit-based dashboard allows real-time analysis, PDF/JSON downloads, and an optional chatbot assistant. This project solves the critical problem of smart contract insecurity and helps developers ship safer DeFi apps faster.
+
+🔹 Technology & Category Tags (choose from Lablab options):
+AI Agent, Cybersecurity, DeFi, Smart Contracts, Blockchain, Groq, Python, C++, Qubic, Streamlit
+
 ---
 
 ## 🧠 Core Features
