@@ -1,4 +1,4 @@
-# DeFi Sentinel – Autonomous Smart Contract Auditor for Qubic
+# DeFi Sentinel – Qubic C++ Smart Contract Auditor
 
 ## 🌐 Overview
 **DeFi Sentinel** is an AI-powered agentic tool designed to audit and verify C++ smart contracts deployed on the Qubic Network. By combining static code analysis with multi-agent intelligence via Model Context Protocol (MCP), the platform detects vulnerabilities, scores risk, and generates human-readable audit reports—accelerating secure development in decentralized finance (DeFi).
