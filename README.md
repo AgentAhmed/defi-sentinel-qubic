@@ -56,6 +56,8 @@ streamlit run frontend/audit_editor.py
 ```bash
 python test/test_vuln_scanner.py
 ```
+## 🚀 Live Demo
+👉 [Run on Streamlit](https://smartcontractauditor.streamlit.app/)
 
 ---
 
