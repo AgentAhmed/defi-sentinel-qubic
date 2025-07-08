@@ -27,12 +27,13 @@ Each agent communicates through shared memory/context layers using MCP, forming 
 ---
 
 ## ⚙️ Tech Stack
-- Python (Agents + Audit Engine)
-- C++ (Qubic Smart Contracts)
-- Streamlit / Flask (Audit UI)
-- Qubic Testnet (Deployment)
-- MCP (Model Context Protocol for agent memory)
-- GitHub Actions (CI/CD optional)
+- **Python** (agent system, MCP, UI)
+- **C++** (Qubic contracts)
+- **Streamlit** (UI dashboard)
+- **Groq API** (LLaMA 3 LLM)
+- **FPDF** (Unicode PDF generation)
+- **Qubic CLI** (testnet deployment)
+- **dotenv** (API config management)
 
 ---
 
