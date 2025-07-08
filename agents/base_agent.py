@@ -6,8 +6,8 @@ class BaseAgent:
     def log(self, message: str):
         print(f"[{self.name}] {message}")
 
-    def read_context(self, key: str):
-        return self.context.read(key)
+    def read_context(self, key: str, default=None):
+        return self.context.read(key, default)
 
     def write_context(self, key: str, value):
         self.context.write(key, value)

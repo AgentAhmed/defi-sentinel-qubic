@@ -1,13 +1,11 @@
-from abc import ABC, abstractmethod
 from typing import Any, Dict
-
 
 class MemoryContext:
     def __init__(self):
-        self.state = {}
+        self.state: Dict[str, Any] = {}
 
-    def read(self, key: str):
-        return self.state.get(key)
+    def read(self, key: str, default=None):
+        return self.state.get(key, default)
 
     def write(self, key: str, value):
         self.state[key] = value

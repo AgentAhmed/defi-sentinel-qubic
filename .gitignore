@@ -144,7 +144,7 @@ ENV/
 env.bak/
 venv.bak/
 qubic/
-
+.env/
 # Spyder project settings
 .spyderproject
 .spyproject

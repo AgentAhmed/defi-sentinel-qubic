@@ -6,4 +6,10 @@ jinja2
 pdfkit
 reportlab
 fpdf2
-
+python-dotenv
+requests
+setuptools
+graphviz
+streamlit-ace
+groq
+wkhtmltopdf
