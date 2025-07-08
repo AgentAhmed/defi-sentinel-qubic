@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ```
 3. Run audit interface locally:
 ```bash
-streamlit run frontend/audit_interface.py
+streamlit run frontend/audit_editor.py
 ```
 4. Test vulnerability scanner:
 ```bash
@@ -60,15 +60,19 @@ python test/test_vuln_scanner.py
 ## 📦 Folder Structure
 ```
 defi-sentinel-qubic/
-├── agents/               # MCP-based modular agents
-├── contracts/            # Sample C++ contracts
-├── mcp/                  # Shared context + protocol code
-├── frontend/             # UI interface
-├── scripts/              # Deployment & explorer scripts
-├── test/                 # Unit tests
-├── README.md             
-├── requirements.txt      # Dependencies
-└── .gitignore
+├── agents/                # Modular AI agents (parser, scanner, risk, report, insights)
+├── contracts/             # Sample C++ smart contracts for auditing
+├── frontend/              # Streamlit-based UI interface
+├── mcp/                   # Model Context Protocol implementation (shared memory)
+├── scripts/               # Testnet deploy, verify, compile, batch audit
+├── fonts/                 # DejaVuSans.ttf for Unicode PDF support
+├── reports/               # Auto-generated audit reports (PDF & JSON)
+├── test/                  # Unit and agent tests
+├── .env                   # Add GROQ_API_KEY here
+├── requirements.txt       
+├── setup.py               # Editable package installer
+└── README.md
+
 ```
 
 ---
