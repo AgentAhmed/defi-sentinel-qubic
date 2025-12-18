@@ -2,7 +2,7 @@ import os
 import requests
 
 class GroqLLM:
-    def __init__(self, api_key=None, model="llama3-70b-8192"):
+    def __init__(self, api_key=None, model="llama-3.3-70b-versatile"):
 
 
         self.api_key = api_key or os.getenv("GROQ_API_KEY")
