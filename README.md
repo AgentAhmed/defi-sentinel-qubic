@@ -1,10 +1,11 @@
-# DeFi Sentinel – Autonomous Smart Contract Auditor for Qubic
+# DeFi Sentinel – Qubic C++ Smart Contract Auditor
 
 ## 🌐 Overview
 **DeFi Sentinel** is an AI-powered agentic tool designed to audit and verify C++ smart contracts deployed on the Qubic Network. By combining static code analysis with multi-agent intelligence via Model Context Protocol (MCP), the platform detects vulnerabilities, scores risk, and generates human-readable audit reports—accelerating secure development in decentralized finance (DeFi).
 
 ## 🎯 Purpose
 To demonstrate a real-world application of decentralized computation using Qubic's smart contract architecture, while showcasing how AI and agentic tools can empower developers with secure-by-design workflows.
+
 
 ---
 
@@ -27,12 +28,13 @@ Each agent communicates through shared memory/context layers using MCP, forming 
 ---
 
 ## ⚙️ Tech Stack
-- Python (Agents + Audit Engine)
-- C++ (Qubic Smart Contracts)
-- Streamlit / Flask (Audit UI)
-- Qubic Testnet (Deployment)
-- MCP (Model Context Protocol for agent memory)
-- GitHub Actions (CI/CD optional)
+- **Python** (agent system, MCP, UI)
+- **C++** (Qubic contracts)
+- **Streamlit** (UI dashboard)
+- **Groq API** (LLaMA 3 LLM)
+- **FPDF** (Unicode PDF generation)
+- **Qubic CLI** (testnet deployment)
+- **dotenv** (API config management)
 
 ---
 
@@ -48,27 +50,33 @@ pip install -r requirements.txt
 ```
 3. Run audit interface locally:
 ```bash
-streamlit run frontend/audit_interface.py
+streamlit run frontend/audit_editor.py
 ```
 4. Test vulnerability scanner:
 ```bash
 python test/test_vuln_scanner.py
 ```
+## 🚀 Live Demo
+👉 [Run on Streamlit](https://smartcontractauditor.streamlit.app/)
 
 ---
 
 ## 📦 Folder Structure
 ```
 defi-sentinel-qubic/
-├── agents/               # MCP-based modular agents
-├── contracts/            # Sample C++ contracts
-├── mcp/                  # Shared context + protocol code
-├── frontend/             # UI interface
-├── scripts/              # Deployment & explorer scripts
-├── test/                 # Unit tests
-├── README.md             
-├── requirements.txt      # Dependencies
-└── .gitignore
+├── agents/                # Modular AI agents (parser, scanner, risk, report, insights)
+├── contracts/             # Sample C++ smart contracts for auditing
+├── frontend/              # Streamlit-based UI interface
+├── mcp/                   # Model Context Protocol implementation (shared memory)
+├── scripts/               # Testnet deploy, verify, compile, batch audit
+├── fonts/                 # DejaVuSans.ttf for Unicode PDF support
+├── reports/               # Auto-generated audit reports (PDF & JSON)
+├── test/                  # Unit and agent tests
+├── .env                   # Add GROQ_API_KEY here
+├── requirements.txt       
+├── setup.py               # Editable package installer
+└── README.md
+
 ```
 
 ---

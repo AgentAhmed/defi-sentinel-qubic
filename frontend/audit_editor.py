@@ -156,10 +156,26 @@ if st.session_state.get("audit_results"):
         col_pdf, col_json = st.columns(2)
         if results.get("pdf_path") and os.path.exists(results["pdf_path"]):
             with open(results["pdf_path"], "rb") as f:
-                col_pdf.download_button("Download PDF Report", f, file_name=os.path.basename(results["pdf_path"]))
+                pdf_bytes = f.read()
+                col_pdf.download_button(
+                    label="📄 Download PDF Report",
+                    data=pdf_bytes,
+                    file_name=os.path.basename(results["pdf_path"]),
+                    mime="application/pdf"
+                )
+
+
         if results.get("json_path") and os.path.exists(results["json_path"]):
             with open(results["json_path"], "rb") as f:
-                col_json.download_button("Download JSON Report", f, file_name=os.path.basename(results["json_path"]))
+                json_bytes = f.read()
+                col_json.download_button(
+                    label="🧾 Download JSON Report",
+                    data=json_bytes,
+                    file_name=os.path.basename(results["json_path"]),
+                    mime="application/json"
+                )
+
+
 
         st.subheader("⚠️ Detected Vulnerabilities")
         for vuln in results.get("vulnerabilities", []):
