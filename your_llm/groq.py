@@ -2,7 +2,7 @@ import os
 import requests
 
 class GroqLLM:
-    def __init__(self, api_key=None, model="llama3-70b-8192"):
+    def __init__(self, api_key=None, model="llama-3.1-8b-instant"):
         self.api_key = api_key or os.getenv("GROQ_API_KEY")
         self.model = model
         self.api_url = "https://api.groq.com/openai/v1/chat/completions"
